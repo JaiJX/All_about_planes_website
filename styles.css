@@ -42,3 +42,40 @@ body {
 .navigation a:hover {
     text-decoration: underline;
 }
+
+.AirbusText {
+    display: block;
+    margin: 40px auto;
+}
+
+
+.Vid_and_Img {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+/* Big background image */
+.overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Smaller video in front of image */
+.AirbusText {
+    position: absolute;
+    width: 400px;
+    /* control video size here */
+    height: auto;
+    bottom: 50px;
+    /* move it where you want */
+    right: 50px;
+    z-index: 2;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
