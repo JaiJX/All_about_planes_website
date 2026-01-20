@@ -43,12 +43,6 @@ body {
     text-decoration: underline;
 }
 
-.AirbusText {
-    display: block;
-    margin: 40px auto;
-}
-
-
 .Vid_and_Img {
     position: relative;
     width: 100%;
@@ -56,8 +50,7 @@ body {
     overflow: hidden;
 }
 
-/* Big background image */
-.overlay {
+.AirbusOver {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -66,16 +59,56 @@ body {
     z-index: 1;
 }
 
-/* Smaller video in front of image */
 .AirbusText {
     position: absolute;
-    width: 400px;
-    /* control video size here */
+    width: 1500px;
     height: auto;
-    bottom: 50px;
-    /* move it where you want */
-    right: 50px;
+    bottom: 100px;
+    right: center;
     z-index: 2;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
+
+.BoeingOver {
+    position: absolute;
+    inset: 0;
+    width: 70%;
+    left: 100px;
+    bottom: 10px;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.BoeingText {
+    position: absolute;
+    width: 1500px;
+    height: auto;
+    bottom: 100px;
+    right: center;
+    z-index: 2;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.HPWOver {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.HPWText {
+    position: absolute;
+    width: 1500px;
+    height: auto;
+    bottom: 100px;
+    right: center;
+    z-index: 2;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
