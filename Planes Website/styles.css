@@ -73,8 +73,8 @@ body {
 .BoeingOver {
     position: absolute;
     inset: 0;
-    width: 70%;
-    left: 100px;
+    width: 70vw;
+    left: 100vw;
     bottom: 10px;
     height: auto;
     object-fit: cover;
@@ -83,9 +83,9 @@ body {
 
 .BoeingText {
     position: absolute;
-    width: 1500px;
+    width: 1500vw;
     height: auto;
-    bottom: 100px;
+    bottom: 100vw;
     right: center;
     z-index: 2;
     border-radius: 12px;
@@ -95,17 +95,17 @@ body {
 .HPWOver {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: 1;
 }
 
 .HPWText {
     position: absolute;
-    width: 1500px;
+    width: 1500vw;
     height: auto;
-    bottom: 100px;
+    bottom: 100vw;
     right: center;
     z-index: 2;
     border-radius: 12px;
