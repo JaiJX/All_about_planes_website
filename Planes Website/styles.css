@@ -43,72 +43,146 @@ body {
     text-decoration: underline;
 }
 
+/* Container for video and image - holds everything together */
 .Vid_and_Img {
+    /* Makes this element positioned so children can be absolute */
     position: relative;
+    /* Takes up full width of parent element */
     width: 100%;
-    height: 80vh;
+    /* Sets container height to 400 pixels for displaying images */
+    height: 400px;
+    /* Hides any content that goes outside the container */
     overflow: hidden;
+    /* Adds black background so page looks clean */
+    background-color: black;
 }
 
+/* Airbus overlay image/video styling */
 .AirbusOver {
+    /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    inset: 0;
+    /* Sets position to 0 from top and left edges */
+    top: 70px;
+    left: 0;
+    /* Makes element take full width of container */
     width: 100%;
+    /* Makes element take full height of container */
     height: 100%;
+    /* Makes image/video cover the entire space without distortion */
     object-fit: cover;
+    /* Places this layer behind text (lower number = behind) */
+    transform: scale(0.9);
     z-index: 1;
 }
 
+/* Airbus text overlay styling */
 .AirbusText {
+    /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    width: 1500px;
+    /* Sets maximum width to 1500 pixels */
+    max-width: 1500px;
+    /* Adds padding inside the text box for spacing */
+    padding: 20px;
+    /* Height adjusts automatically based on content */
     height: auto;
-    bottom: 100px;
-    right: center;
+    /* Positions 50 pixels from the bottom */
+    bottom: 3px;
+    /* Centers horizontally - 50% moves it halfway */
+    left: 50%;
+    /* Shifts it back by half its width to center perfectly */
+    transform: translateX(-50%);
+    /* Places this layer in front of images (higher number = in front) */
     z-index: 2;
+    /* Rounds the corners by 12 pixels */
     border-radius: 12px;
+    /* Adds a dark shadow for depth effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
+/* Boeing overlay image/video styling */
 .BoeingOver {
+    /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    inset: 0;
-    width: 70vw;
-    left: 100vw;
-    bottom: 10px;
-    height: auto;
-    object-fit: cover;
+    /* Positions at top edge */
+    top: 180px;
+    /* Positions at left edge */
+    left: 0;
+    /* Makes element take full width */
+    width: 100%;
+    /* Makes element take full height */
+    height: 100%;
+    /* Contains entire image within box - shows full image without cropping */
+    object-fit: contain;
+    transform: scale(3.5);
+    /* Centers the image horizontally */
+    object-position: center;
+    /* Places this layer behind text */
     z-index: 1;
 }
 
+/* Boeing text overlay styling */
 .BoeingText {
+    /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    width: 1500vw;
+    /* Sets maximum width to 1500 pixels */
+    max-width: 1700px;
+    /* Adds padding inside the text box for spacing */
+    padding: 20px;
+    /* Height adjusts automatically based on content */
     height: auto;
-    bottom: 100vw;
-    right: center;
+    /* Positions 50 pixels from the bottom */
+    bottom: 1px;
+    /* Centers horizontally - 50% moves it halfway */
+    left: 50%;
+    /* Shifts it back by half its width to center perfectly */
+    transform: translateX(-50%);
+    /* Places this layer in front of images */
     z-index: 2;
+    /* Rounds the corners by 12 pixels */
     border-radius: 12px;
+    /* Adds a dark shadow for depth effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
+/* HPW overlay image/video styling */
 .HPWOver {
+    /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
+    /* Positions at top edge */
+    top: 0;
+    /* Positions at left edge */
+    left: 0;
+    /* Makes element take full width */
+    width: 100%;
+    /* Makes element take full height */
+    height: 100%;
+    /* Makes image/video cover the space without distortion */
     object-fit: cover;
+    /* Places this layer behind text */
     z-index: 1;
 }
 
+/* HPW text overlay styling */
 .HPWText {
+    /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    width: 1500vw;
+    /* Sets maximum width to 1500 pixels */
+    max-width: 1500px;
+    /* Adds padding inside the text box for spacing */
+    padding: 20px;
+    /* Height adjusts automatically based on content */
     height: auto;
-    bottom: 100vw;
-    right: center;
+    /* Positions 50 pixels from the bottom */
+    bottom: 50px;
+    /* Centers horizontally - 50% moves it halfway */
+    left: 50%;
+    /* Shifts it back by half its width to center perfectly */
+    transform: translateX(-50%);
+    /* Places this layer in front of images */
     z-index: 2;
+    /* Rounds the corners by 12 pixels */
     border-radius: 12px;
+    /* Adds a dark shadow for depth effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
