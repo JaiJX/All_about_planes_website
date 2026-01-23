@@ -1,45 +1,76 @@
+/* Resets all default browser styling for every element */
 * {
+    /* Removes default margins from all elements */
     margin: 0;
+    /* Removes default padding from all elements */
     padding: 0;
-    box-sizing:border-box;
+    /* Makes width/height include padding and border (easier sizing) */
+    box-sizing: border-box;
 }
 
+/* Styles the entire page body */
 body {
+    /* Sets the page background color to black */
     background-color: black;
+    /* Sets the default font for all text on the page */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Styles the header navigation bar at the top */
 .Bar {
-    background:linear-gradient(#3a3a3a, #2f2f2f);
+    /* Creates a gradient background from lighter gray to darker gray */
+    background: linear-gradient(#3a3a3a, #2f2f2f);
+    /* Sets the bar height to 120 pixels */
     height: 120px;
+    /* Uses flexbox layout to arrange items inside */
     display: flex;
+    /* Centers items vertically in the bar */
     align-items: center;
+    /* Spreads items apart - logo on left, navigation on right */
     justify-content: space-between;
+    /* Adds 60 pixels of space on left and right, 0 on top and bottom */
     padding: 0 60px;
 }
 
+/* Styles the "All About Planes" logo text */
 .Logo {
+    /* Sets text color to white */
     color: white;
+    /* Sets font size to 48 pixels (large heading) */
     font-size: 48px;
+    /* Sets font weight to normal (note: "noraml" is typo, should be "normal") */
     font-weight: noraml;
 }
 
+/* Styles the navigation menu container */
 .navigation {
+    /* Creates a gradient background from lighter to darker gray */
     background: linear-gradient(#bfbfbf, #9d9d9d);
+    /* Makes the navigation box have rounded corners (pill shape) */
     border-radius: 50px;
+    /* Adds 16 pixels padding top/bottom and 30 pixels left/right */
     padding: 16px 30px;
+    /* Uses flexbox to arrange navigation links in a row */
     display: flex;
+    /* Adds 40 pixels of space between each navigation link */
     gap: 40px;
 }
 
-.navigation a{
+/* Styles the individual navigation links */
+.navigation a {
+    /* Removes the default underline from links */
     text-decoration: none;
+    /* Sets link text color to white */
     color: white;
+    /* Sets link font size to 22 pixels */
     font-size: 22px;
+    /* Makes the font slightly bold (500 is medium weight) */
     font-weight: 500;
 }
 
+/* Styles navigation links when you hover over them with mouse */
 .navigation a:hover {
+    /* Adds underline to links when hovering for visual feedback */
     text-decoration: underline;
 }
 
@@ -51,7 +82,7 @@ body {
     width: 100%;
     /* Sets container height to 400 pixels for displaying images */
     height: 400px;
-    /* Hides any content that goes outside the container */
+    /* CHANGED: hides overflow instead of scroll - no scrollbar inside container */
     overflow: hidden;
     /* Adds black background so page looks clean */
     background-color: black;
@@ -61,8 +92,9 @@ body {
 .AirbusOver {
     /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    /* Sets position to 0 from top and left edges */
+    /* Sets position to 70 pixels from top edge */
     top: 70px;
+    /* Sets position to 0 from left edge */
     left: 0;
     /* Makes element take full width of container */
     width: 100%;
@@ -70,8 +102,9 @@ body {
     height: 100%;
     /* Makes image/video cover the entire space without distortion */
     object-fit: cover;
-    /* Places this layer behind text (lower number = behind) */
+    /* Scales the image to 90% of original size */
     transform: scale(0.9);
+    /* Places this layer behind text (lower number = behind) */
     z-index: 1;
 }
 
@@ -85,7 +118,7 @@ body {
     padding: 20px;
     /* Height adjusts automatically based on content */
     height: auto;
-    /* Positions 50 pixels from the bottom */
+    /* Positions 3 pixels from the bottom */
     bottom: 3px;
     /* Centers horizontally - 50% moves it halfway */
     left: 50%;
@@ -99,11 +132,43 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
+/* Styling for all Airbus paragraph containers */
+.Airbuspara1,
+.Airbuspara2,
+.Airbuspara3,
+.Airbuspara4 {
+    /* Sets maximum width so text doesn't stretch too wide */
+    max-width: 1200px;
+    /* Centers the paragraph container horizontally on the page */
+    margin: 30px auto;
+    /* Adds 40 pixels padding on top/bottom and 20 pixels on left/right */
+    padding: 40px 20px;
+    /* Sets text color to white so it shows on dark background */
+    color: white;
+    /* Sets a dark gray background for better readability */
+    background-color: #1a1a1a;
+    /* Rounds the corners by 8 pixels for a modern look */
+    border-radius: 8px;
+}
+
+/* Styling for paragraph text inside the containers */
+.Airbuspara1 p,
+.Airbuspara2 p,
+.Airbuspara3 p,
+.Airbuspara4 p {
+    /* Sets font size to 18 pixels for easy reading */
+    font-size: 18px;
+    /* Sets line height to 1.8 times the font size for better readability */
+    line-height: 1.8;
+    /* Removes default margin from paragraphs */
+    margin: 0;
+}
+
 /* Boeing overlay image/video styling */
 .BoeingOver {
     /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    /* Positions at top edge */
+    /* Positions 180 pixels from top edge */
     top: 180px;
     /* Positions at left edge */
     left: 0;
@@ -113,6 +178,7 @@ body {
     height: 100%;
     /* Contains entire image within box - shows full image without cropping */
     object-fit: contain;
+    /* Scales the image to 3.5 times larger */
     transform: scale(3.5);
     /* Centers the image horizontally */
     object-position: center;
@@ -124,13 +190,13 @@ body {
 .BoeingText {
     /* Positions element relative to the .Vid_and_Img container */
     position: absolute;
-    /* Sets maximum width to 1500 pixels */
+    /* Sets maximum width to 1700 pixels */
     max-width: 1700px;
     /* Adds padding inside the text box for spacing */
     padding: 20px;
     /* Height adjusts automatically based on content */
     height: auto;
-    /* Positions 50 pixels from the bottom */
+    /* Positions 1 pixel from the bottom */
     bottom: 1px;
     /* Centers horizontally - 50% moves it halfway */
     left: 50%;
@@ -144,22 +210,36 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-/* HPW overlay image/video styling */
-.HPWOver {
-    /* Positions element relative to the .Vid_and_Img container */
-    position: absolute;
-    /* Positions at top edge */
-    top: 0;
-    /* Positions at left edge */
-    left: 0;
-    /* Makes element take full width */
-    width: 100%;
-    /* Makes element take full height */
-    height: 100%;
-    /* Makes image/video cover the space without distortion */
-    object-fit: cover;
-    /* Places this layer behind text */
-    z-index: 1;
+/* Styling for all Airbus paragraph containers */
+.Boeingpara1,
+.Boeingpara2,
+.Boeingpara3,
+.Boeingpara4 {
+    /* Sets maximum width so text doesn't stretch too wide */
+    max-width: 1200px;
+    /* Centers the paragraph container horizontally on the page */
+    margin: 30px auto;
+    /* Adds 40 pixels padding on top/bottom and 20 pixels on left/right */
+    padding: 40px 20px;
+    /* Sets text color to white so it shows on dark background */
+    color: white;
+    /* Sets a dark gray background for better readability */
+    background-color: #1a1a1a;
+    /* Rounds the corners by 8 pixels for a modern look */
+    border-radius: 8px;
+}
+
+/* Styling for paragraph text inside the containers */
+.Boeingpara1 p,
+.Boeingpara2 p,
+.Boeingpara3 p,
+.Boeingpara4 p {
+    /* Sets font size to 18 pixels for easy reading */
+    font-size: 18px;
+    /* Sets line height to 1.8 times the font size for better readability */
+    line-height: 1.8;
+    /* Removes default margin from paragraphs */
+    margin: 0;
 }
 
 /* HPW text overlay styling */
@@ -173,7 +253,7 @@ body {
     /* Height adjusts automatically based on content */
     height: auto;
     /* Positions 50 pixels from the bottom */
-    bottom: 50px;
+    bottom: 2px;
     /* Centers horizontally - 50% moves it halfway */
     left: 50%;
     /* Shifts it back by half its width to center perfectly */
@@ -186,3 +266,95 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
+/* Styling for all Airbus paragraph containers */
+.HPWpara1,
+.HPWpara2,
+.HPWpara3,
+.HPWpara4 {
+    /* Sets maximum width so text doesn't stretch too wide */
+    max-width: 1200px;
+    /* Centers the paragraph container horizontally on the page */
+    margin: 30px auto;
+    /* Adds 40 pixels padding on top/bottom and 20 pixels on left/right */
+    padding: 40px 20px;
+    /* Sets text color to white so it shows on dark background */
+    color: white;
+    /* Sets a dark gray background for better readability */
+    background-color: #1a1a1a;
+    /* Rounds the corners by 8 pixels for a modern look */
+    border-radius: 8px;
+}
+
+/* Styling for paragraph text inside the containers */
+.HPWpara1 p,
+.HPWpara2 p,
+.HPWpara3 p,
+.HPWpara4 p {
+    /* Sets font size to 18 pixels for easy reading */
+    font-size: 18px;
+    /* Sets line height to 1.8 times the font size for better readability */
+    line-height: 1.8;
+    /* Removes default margin from paragraphs */
+    margin: 0;
+}
+
+.footer {
+    /* Sets footer background color to dark gray */
+    background-color: #2f2f2f;
+    /* Adds 20 pixels padding inside the footer */
+    padding: 20px;
+    /* Centers text inside the footer */
+    text-align: center;
+    /* Sets text color to white for contrast */
+    color: white;
+    /* Sets font size to 16 pixels */
+    font-size: 16px;
+}
+
+.Morefooter {
+    /* Sets footer background color to dark gray */
+        background-color: #2f2f2f;
+        /* Adds 20 pixels padding inside the footer */
+        padding: 20px;
+        /* Centers text inside the footer */
+        text-align: center;
+        /* Sets text color to white for contrast */
+        color: white;
+        /* Sets font size to 16 pixels */
+        font-size: 16px;
+}
+
+
+.formbox {
+    /* Sets maximum width of form box */
+    max-width: 600px;
+    /* Centers form box horizontally */
+    margin: 40px auto;
+    /* Adds padding inside the form box */
+    padding: 20px;
+    /* Sets background color to dark gray */
+    background-color: #1a1a1a;
+    /* Rounds the corners by 8 pixels */
+    border-radius: 8px;
+}
+
+.Namebox{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    padding: auto;  
+    background-color: #1a1a1a;
+
+}
+
+.EmailBox{
+
+}
+
+.DateBox{
+
+}
+
+.Radiobox {
+
+}
