@@ -1,3 +1,7 @@
+body *
+{ outline:
+1px solid lime }
+
 /* Resets all default browser styling for every element */
 * {
     /* Removes default margins from all elements */
@@ -347,14 +351,4 @@ body {
 
 }
 
-.EmailBox{
-
-}
-
-.DateBox{
-
-}
-
-.Radiobox {
-
-}
+@media (415px )
