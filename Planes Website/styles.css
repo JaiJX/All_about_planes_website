@@ -1,6 +1,6 @@
-body *
+/*body *
 { outline:
-1px solid lime }
+1px solid lime }*/
 
 /* Resets all default browser styling for every element */
 * {
@@ -280,8 +280,8 @@ body {
         padding: 8px 0;
         z-index: 10;
         border-radius: 8px;
-        top: 100%;
-        left: 0;
+        top: 0%;
+        right: 100%;
         margin-top: 8px;
     }
     
@@ -299,5 +299,22 @@ body {
 
     .dropitems.show {
         display: block;
+    }
+
+    .AirbusOver {
+        transform: scale(1.6);
+    }
+
+    .BoeingOver {
+        transform: scale(1.5);
+        top: 110px;
+        left: 2px;
+    }
+
+    .HPWText {
+        position: absolute;
+        max-width: 6000px;
+        max-height: 3000px;
+        padding: 0;
     }
 }

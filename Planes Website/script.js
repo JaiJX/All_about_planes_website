@@ -1,7 +1,7 @@
 console.log("Hello Jaison, Your Script Works.")
 
 
-function toggledropDown() {
+function dropDown() {
     const dropcontent = document.querySelector('.dropitems');
     dropcontent.classList.toggle('show');
 
