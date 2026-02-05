@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>All About Planes</title>
+    </head>
+
+    <body>
+        <header class="Bar">
+            <h1 class="Logo">All About Planes</h1>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="Airbus.html">Airbus</a>
+                <a href="Boeing.html">Boeing</a>
+                <a href="HPW.html">How Planes Work</a>
+                <a href="More.html">More</a>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropDown()"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 6h10M4 12h16M7 12h13M7 18h10"/></svg></button>
+                <div class="dropitems">
+                    <hr><a href="index.html">Home</a>
+                    <hr><a href="Airbus.html">Airbus</a>
+                    <hr><a href="Boeing.html">Boeing</a>
+                    <hr><a href="HPW.html">How Planes Work</a>
+                    <hr><a href="More.html">More</a>
+                </div>
+            </div>
+        </header>
+        <form class="formBox">
+            <input type="text" placeholder="Name" class="NameBox">
+            <input type="email" placeholder="Email" class="EmailBox">
+            <input type="date" placeholder="Date" class="DateBox">
+            <input type="radio" placeholder="Button1"class="radioBox">
+            <input type="radio" placeholder="Button2" class="radioBox">
+            <input type="checkbox"  class="checkboxBox">
+            <input type="submit" value="Submit" class="SubmitBox">
+            <input type="reset" value="Reset" class="ResetBox">
+        </form>
+    </body>
+    <footer class="Morefooter">
+        <p>More</p>
+    </footer>
+    <script src="script.js"></script>
+</html>
