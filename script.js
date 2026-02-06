@@ -17,4 +17,18 @@ function dropDown() {
         }
     }
 }}
-console.log("Script Works")
+
+/*
+
+
+import { neon } from '@neondatabase/serverless';
+
+const sql = neon('postgresql://neondb_owner:npg_8ZhxeCOYVK2v@ep-dawn-river-ak83xlni-pooler.c-3.us-west-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require');
+
+const posts = await sql('SELECT * FROM posts')
+
+
+
+console.log("Script Done")
+*/
+

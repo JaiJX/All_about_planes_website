@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Styles the entire page body */
 body {
     background-color: black;
@@ -51,6 +50,37 @@ body {
 /* Styles navigation links when you hover over them with mouse */
 .navigation a:hover {
     text-decoration: underline;
+}
+
+.welcome_text {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.logo_holder {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.Airbus_svg {
+    width: 460px;
+    height: auto;
+    
+}
+
+.Boeing_svg {
+    width: 460px;
+    height: auto;
+    
+
 }
 
 /* Container for video and image - holds everything together */
@@ -222,6 +252,10 @@ body {
     border-radius: 8px;
 }
 
+.btn1 {
+    background-color: white;
+}
+
 .Namebox{
     width: 300px;
     height: auto;
@@ -243,7 +277,7 @@ body {
     display: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 1100){
     .navigation {
         display: none;
     }
