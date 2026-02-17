@@ -18,25 +18,7 @@ function dropDown() {
     }
 }};
 
-
-function getData(event) {
-    event.getDefualt
-    const form = document.forms["finput"];
-
-    const name = form["fname"].value;
-    const email = form["femail"].value;
-    console.log(name);
-    console.log(email);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.forms["finput"];
-    if (form) {
-        form.addEventListener("submit", getData);
-    }
-});
-
-
+//DB Connection script
 console.log("Hi Script is running from DB_connection.js");
 const { neon } = require('@neondatabase/serverless');
 
