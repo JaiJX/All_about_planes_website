@@ -351,4 +351,26 @@ body {
         max-height: 3000px;
         padding: 0;
     }
+
+    .Airbus_svg {
+    width: 300px;
+    height: auto;
+    transform: scale(0.9);
+    }
+
+    .Boeing_svg {
+    width: 300px;
+    height: auto;
+    transform: scale(0.8);
+    }
+    .HPWText{
+        transform: scale(0.1);
+        left: 50%;
+        top: 50px;
+    }
+    
+    #HPWDIV{
+        width: 500px;
+        height: 300px;
+    }
 }
