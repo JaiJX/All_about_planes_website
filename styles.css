@@ -243,38 +243,86 @@ body {
     font-size: 16px;
 }
 
-
-.formbox {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 8px;
-}
-
 .btn1 {
     background-color: white;
 }
 
-.Namebox{
+.knowMore {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.formDiv {
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    display: flex;
+    width: 500px;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 60px;
+  
+    
+}
+
+.radioDiv {
+    padding: 10px;  
+    
+    
+}
+
+.FCP{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+.PIC,
+.Star,
+.Timmys {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.submitDiv {
+    padding: 20px;
+}
+
+.PIC {
+    color: white;
+
+}
+.checkDiv {
+    padding: 10px;
+}
+
+.cBox1,
+.cBox2,
+.cBox3,
+.cBox4 {
+    color: white;
+}
+
+
+.Namebox {
     width: 300px;
     height: auto;
-    margin: 10px;
-    padding: auto;  
-    background-color: #1a1a1a;
+    padding: 100px;
 
 }
 .dropdown {
     display: none;
 }
 
-.dropdown{
-    display: none;
-}
-
 .dropitems {
     display: none;
-    display: none;
+    
 }
 
 @media (max-width: 1100px){
