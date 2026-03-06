@@ -25,11 +25,17 @@ function radioClick() {
     console.log(radio1checked, radio2checked)
 
 
-    if(radio1checked){
+    if(radio1checked && radio2checked) {
+        alert("You must choose one")
+    }
+    else if(radio1checked){
         alert("Try Starbucks it's Better");
     }
-    else {
+    else if (radio2checked) {
         alert("You know Good Coffee!");
+    }
+    else {
+        alert("Try Coffee");
     }
 }
 
