@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* hides horizontal scrollbar */
+html, body{
+        overflow-x: hidden;
+    }
 /* Styles the entire page body */
 body {
     background-color: black;
@@ -294,6 +298,7 @@ body {
     font-size: 23px;
     padding: 10px;
 }
+.SU,
 .PIC,
 .Star,
 .Timmys {
@@ -306,10 +311,10 @@ body {
     padding: 20px;
 }
 
-.PIC {
-    color: white;
-
+.SU {
+    padding-bottom: 10px;
 }
+
 .checkDiv {
     padding: 10px;
 }
@@ -336,7 +341,7 @@ body {
     display: none;
     
 }
-
+/*General Small screen*/
 @media (max-width: 1100px){
     .navigation {
         display: none;
@@ -448,45 +453,116 @@ body {
     }
        
 }
-
-@media (max-width: 450px) {
-
-
+/*Iphone XR Size*/
+@media (max-width: 420px) {
     .Bar {
-        width: 450px;
-        position: flex;
+        width: 420px;
+    }
+
+    .footer {
+        width: 420px;
     }
 
     .Airbus_svg {
         margin: 0;
-        padding-right: 2px;
-        width: 150px;
+        padding-right: 20px;
+        width: 100px;
         height: auto;
-        transform: scale(1.5);
+        padding-left: 5px;
+        transform: scale(3);
     }
 
     .Boeing_svg {
         margin: 0;
-        padding-left: 50px;
-        width: 140px;
+        padding-left: 40px;
+        width: 100px;
         height: auto;
-        transform: scale(2);
+        transform: scale(2.7);
     }
 
     .logo_holder {
         padding-top: 60px;
-        padding-bottom: 186px;
+        padding-bottom: 255px;
     }
     
     #HPWDIV {
         display: none;
     }
 
+    .knowMore{
+        font-size: 30px;
+        padding-bottom: 50px;
+    }
+
+    .BoeingOver {
+        transform: scale(1.5);
+    }
+
+     .formDiv {
+        width: 380px;
+        margin-bottom: 207px;
+    }
+
+    .FCP,
+    .PIC  {
+        font-size: 16px;
+
+    }
+
+
     
 
 
 }
 
+/*Iphone SE Size*/
+@media (max-width: 380px) {
+    .Bar {
+        width: 380px;
+        position: flex;
+    }
+
+    .footer {
+        width: 380px;
+    }
+    .Airbus_svg {
+        transform: scale(2.5);
+    }
+
+    .Boeing_svg {
+        transform: scale(2.4);
+        padding-left: 35px;
+    }
+
+    .logo_holder{
+        padding-top: 20px;
+        padding-bottom: 167px;
+    }
+
+    .welcome_text{
+        padding-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .BoeingOver {
+        transform: scale(1.4);
+    }
+
+    .formDiv {
+        width: 355px;
+    }
+
+    .FCP,
+    .PIC  {
+        font-size: 16px;
+
+    }
+
+
+}
+
+
+/*Moniter resizing*/
 @media (min-width: 1700px) {
     .formDiv {
         margin-bottom: 295px;
