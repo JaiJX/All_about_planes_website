@@ -12,6 +12,9 @@
 body {
     background-color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* Styles the header navigation bar at the top */
@@ -68,6 +71,7 @@ body {
     gap: 24px;
     width: 100%;
     padding: 10px 20px;
+    padding-bottom: 150px;
 }
 
 .Airbus_svg {
@@ -208,7 +212,9 @@ body {
 .HPWpara1,
 .HPWpara2,
 .HPWpara3,
-.HPWpara4 {
+.HPWpara4,
+.HPWpara5,
+.HPWpara6  {
     max-width: 1200px;
     margin: 30px auto;
     padding: 40px 20px;
@@ -221,7 +227,10 @@ body {
 .HPWpara1 p,
 .HPWpara2 p,
 .HPWpara3 p,
-.HPWpara4 p {
+.HPWpara4 p,
+.HPWpara4 p,
+.HPWpara5 p,
+.HPWpara6 p {
     font-size: 18px;
     line-height: 1.8;
     margin: 0;
@@ -229,10 +238,12 @@ body {
 
 .footer {
     background-color: #2f2f2f;
-    padding: 20px;
+    float: bottom;
+    padding: 40px;
     text-align: center;
     color: white;
     font-size: 16px;
+
 }
 
 .Morefooter {
@@ -243,38 +254,87 @@ body {
     font-size: 16px;
 }
 
-
-.formbox {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #1a1a1a;
-    border-radius: 8px;
-}
-
 .btn1 {
     background-color: white;
 }
 
-.Namebox{
+.knowMore {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.formDiv {
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    display: flex;
+    width: 500px;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 60px;
+    
+  
+    
+}
+
+.radioDiv {
+    padding: 10px;  
+    
+    
+}
+
+.FCP{
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+.PIC,
+.Star,
+.Timmys {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.submitDiv {
+    padding: 20px;
+}
+
+.PIC {
+    color: white;
+
+}
+.checkDiv {
+    padding: 10px;
+}
+
+.cBox1,
+.cBox2,
+.cBox3,
+.cBox4 {
+    color: white;
+}
+
+
+.Namebox {
     width: 300px;
     height: auto;
-    margin: 10px;
-    padding: auto;  
-    background-color: #1a1a1a;
+    padding: 100px;
 
 }
 .dropdown {
     display: none;
 }
 
-.dropdown{
-    display: none;
-}
-
 .dropitems {
     display: none;
-    display: none;
+    
 }
 
 @media (max-width: 1100px){
@@ -285,13 +345,21 @@ body {
     .Logo {
         color: white;
         font-size: 30px;
-        font-weight: noraml;
-}
+        font-weight: normal;
+    }
+
+  
+    .logo_holder {
+        padding-bottom: 300px;
+    }
 
     .dropdown {
         margin-left: 50px;
         position: relative;
         display: inline-block;
+    }
+    .svg {
+        z-index: 0;
     }
 
     .dropbtn {
@@ -303,6 +371,7 @@ body {
         cursor: pointer;
         border-radius: 50px;
         font-weight: 500;
+        z-index: 10;
     }
 
     .dropitems {
@@ -344,11 +413,87 @@ body {
         top: 110px;
         left: 2px;
     }
+    .BoeingOver{
+        transform: scale(3);
+
+    }
 
     .HPWText {
         position: absolute;
         max-width: 6000px;
         max-height: 3000px;
         padding: 0;
+    }
+
+    .Airbus_svg {
+        width: 300px;
+        height: auto;
+        transform: scale(0.9);
+    }
+
+    .Boeing_svg {
+        width: 300px;
+        height: auto;
+        transform: scale(0.8);
+    }
+
+    .HPWText{
+        transform: scale(0.1);
+        left: 50%;
+        top: 50px;
+    }
+    
+    #HPWDIV{
+        display: none;
+    }
+       
+}
+
+@media (max-width: 450px) {
+
+
+    .Bar {
+        width: 450px;
+        position: flex;
+    }
+
+    .Airbus_svg {
+        margin: 0;
+        padding-right: 2px;
+        width: 150px;
+        height: auto;
+        transform: scale(1.5);
+    }
+
+    .Boeing_svg {
+        margin: 0;
+        padding-left: 50px;
+        width: 140px;
+        height: auto;
+        transform: scale(2);
+    }
+
+    .logo_holder {
+        padding-top: 60px;
+        padding-bottom: 186px;
+    }
+    
+    #HPWDIV {
+        display: none;
+    }
+
+    
+
+
+}
+
+@media (min-width: 1700px) {
+    .formDiv {
+        margin-bottom: 295px;
+        margin-top: 100px;
+    }
+
+    .knowMore {
+        padding-top: 100px;
     }
 }
