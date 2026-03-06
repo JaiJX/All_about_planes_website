@@ -19,3 +19,18 @@ function dropDown() {
 }};
 
 
+function radioClick() {
+    const radio1checked = document.getElementById("radioBox1").checked;
+    const radio2checked = document.getElementById("radioBox2").checked;
+    console.log(radio1checked, radio2checked)
+
+
+    if(radio1checked){
+        alert("Try Starbucks it's Better");
+    }
+    else {
+        alert("You know Good Coffee!");
+    }
+}
+
+
